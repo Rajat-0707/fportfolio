@@ -1,0 +1,155 @@
+.h{
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+.container2222 {
+  background-color: #ffffff;
+  max-width: 900px;
+  margin: 4rem ;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  
+}
+
+.header1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.header1 h1 {
+  color: #008060;
+  margin-bottom: 0.3rem;
+}
+
+.contact {
+  font-size: 0.85rem;
+  color: #0074d9;
+}
+
+.contact1 a {
+  color: #0074d9;
+  text-decoration: none;
+  margin: 0 0.3rem;
+}
+
+hr {
+  margin: 1.5rem 0;
+  border: 1px solid #bfbfbf;
+}
+
+section h2 {
+  color: #008060;
+  border-bottom: 2px solid #d4a017;
+  padding-bottom: 0.3rem;
+  margin-top: 2rem;
+}
+
+.skills-list p {
+  margin: 0.3rem 0;
+}
+
+.proects ol {
+  padding-left: 1.2rem;
+}
+
+.proects li {
+  margin-bottom: 1.2rem;
+}
+
+.proects a {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.ins{
+    font-weight: bold;
+}
+
+
+/* Resume Download Component Styles */
+.resume-download-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  padding: 2rem;
+  background: transparent;
+}
+
+.resume-download-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 3rem;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.download-icon {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.8;
+}
+
+.resume-download-card h2 {
+  color: var(--text-accent);
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  background: transparent;
+}
+
+.resume-download-card p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  background: transparent;
+}
+
+.download-button {
+  background: var(--primary-gradient);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.download-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  background: var(--accent-gradient);
+}
+
+.download-note {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin: 0;
+  background: transparent;
+}

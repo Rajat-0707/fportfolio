@@ -1,0 +1,122 @@
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    animation: slideDown 0.8s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.nav:hover {
+  background: rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.container67{
+    background: transparent;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.linn{
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.linn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.5s;
+}
+
+.linn:hover::before {
+  left: 100%;
+}
+
+.linn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  color: var(--text-accent);
+}
+
+.blank{
+    flex-grow: 1;
+    width: 50px;
+    background : transparent;
+
+}
+.nav-links {
+    display: flex;
+    background: transparent;
+    align-items: center;
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    padding: 0 1rem;
+    height: 70px;
+  }
+  
+  .linn {
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+  }
+  
+  .nav-links {
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .linn {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.8rem;
+  }
+}
