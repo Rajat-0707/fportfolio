@@ -99,7 +99,7 @@ function App() {
                <div className="project-card">
                  <h4>Portfolio Website</h4>
                  <p>A modern, responsive portfolio website showcasing projects, skills, and experience. Built with React and styled with glassmorphism design principles.</p>
-                 <a href="https://portfolio-iota-swart-42.vercel.app/" target="_blank" rel="noopener noreferrer">View Project →</a>
+                 <a href="https://portfolion-eta.vercel.app/" target="_blank" rel="noopener noreferrer">View Project →</a>
                </div>
              </div>
            </div>
