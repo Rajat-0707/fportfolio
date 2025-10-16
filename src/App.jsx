@@ -16,6 +16,8 @@ import Projects from './projects'
 import Mainpage from './mainpage'
 import './main2.css'
 import WordDisplay from './worddisplay'
+import Contact from './contact'
+import './contact.css'
 import { Element } from 'react-scroll'
 
 function App() {
@@ -127,12 +129,17 @@ function App() {
        </div>
        </Element>
 
-     </div>
+      <Element name="resume" >
+       <Hr />
+       <ResumeDownload />
+      </Element>
       <Hr />
 
-    <Element name="resume" >
-     <ResumeDownload />
-    </Element>
+      <Element name="contact" >
+       <Contact />
+      </Element>
+
+     </div>
     </>
   
   )
